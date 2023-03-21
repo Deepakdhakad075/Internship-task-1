@@ -1,0 +1,93 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+   
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: url(Inkedredwave.jpg);
+    background-position:bottom ;
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background: crimson;
+    color: white;
+
+
+}
+.logo{
+    font: size 50px;
+    font-weight: bolt;
+    letter-spacing: 2px;
+}
+.menu a{
+   text-decoration: none;
+   font-size: 20px;
+   color: black;
+ 
+   padding: 6px 20px;
+   margin:5px;
+   border-radius: 20px 0px 20px 0px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.left, .right{
+    flex-basis: 50%;
+    
+}
+.left h1{
+   font-family: 'Ubuntu', sans-serif;
+    font-size: 50px;
+   margin-bottom: 20px;
+}
+.left{
+    max-width: 500px;
+    padding-left: 53px;
+}
+.left p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+button{
+    background-color: rgb(30, 56, 59);
+    padding: 10px;
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 8px 1px;
+}
+.right img{
+    width: 97%;
+    height: 455px;
+    padding-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
