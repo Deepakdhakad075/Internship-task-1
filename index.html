@@ -17,14 +17,19 @@
             <h1>OASIS INFOBYTE</h1>
         </div>
         <div class="menu">
-            <a href="#" style="color:black; background-color: whitesmoke;">Home</a>
-            <a href="#" style="color:black; background-color: whitesmoke;">About</a>
-            <a href="#" style="color:black; background-color: whitesmoke;">Contact</a>
-            <a href="#" style="color:black; background-color: whitesmoke;">Features</a>
-            <a href="#" style="color:black; background-color: whitesmoke;">Blog</a>
-            <a href="#" style="color:black; background-color: whitesmoke;">info</a>
+            <a  onclick="toggleMenu()"  href="#" style="color:black; background-color: whitesmoke; ">Home</a>
+            <a  onclick="toggleMenu()" href="#" style="color:black; background-color: whitesmoke;">About</a>
+            <a  onclick="toggleMenu()" href="#" style="color:black; background-color: whitesmoke;">Contact</a>
+            <a  onclick="toggleMenu()" href="#" style="color:black; background-color: whitesmoke;">Features</a>
+            <a onclick="toggleMenu()"  href="#" style="color:black; background-color: whitesmoke;">Blog</a>
+            <a  onclick="toggleMenu()" href="#" style="color:black; background-color: whitesmoke;">info</a>
         </div>
-
+        <div class="hamburger-menu"  onclick="toggleMenu()">
+        
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+         </div>
         </nav>
 
     <div class="container">
@@ -41,5 +46,16 @@
 
 
     </header>
+     <script>
+        const hamburger = document.querySelector(".hamburger-menu");
+        const menu = document.querySelector(".menu");
+    
+        hamburger.addEventListener("click", () => {
+            menu.classList.toggle("active-menu");
+        });
+    </script> 
+
+    
+   
 </body>
 </html>

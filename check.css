@@ -80,69 +80,41 @@ nav a:hover {
   
     background: var(--yellow) ;
   }
+
+  .hamburger-menu {
+    display: none;
+  }
   
-  @media only screen and (max-width: 768px) {
-    .menu {
-        display: none;
-    }
-    .hamburger-menu {
-        display: block;
-        cursor: pointer;
-    }
-    .hamburger-menu .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px;
-        background-color: white;
-    }
-    .container {
-        flex-direction: column;
-        align-items: center;
-        padding-top: 80px;
-    }
-    .left, .right {
-        flex-basis: 100%;
-    }
-    .left h1 {
-        font-size: 40px;
-    }
-    .left p {
-        font-size: 18px;
-    }
-    .right img {
-        height: auto;
-        width: 100%;
-        max-width: 400px;
-    }
-
-    .active-menu{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 70px;
-        width: 100%;
-        background-color: crimson;
-        height: 100vh;
-    }
-
-    .active-menu .menu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
-        top: 70px;
-        width: 100%;
-        background-color: crimson;
-    }
-    .active-menu .menu a {
-        display: block;
-        margin: 5px;
-        padding: 10px;
-        border-radius: 20px;
-        text-align: center;
-        width: 100%;
-    }
-}
-
-
+  .menu-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .menu-btn span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-btn.open span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-btn.open span:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: top left;
+  }
+  
+  .menu-btn.open span:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+  }
+  
